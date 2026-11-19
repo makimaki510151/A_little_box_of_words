@@ -1,0 +1,62 @@
+[
+  {
+    "id": "library",
+    "name": "図書館",
+    "description": "文字片を静かに集め、世界に言葉を蓄える。",
+    "maxLevel": 10,
+    "baseCost": { "letters": 25 },
+    "costGrowth": 1.55,
+    "production": { "letters": 1 },
+    "productionIntervalMs": 2000,
+    "unlockCondition": { "type": "always" },
+    "visualOrder": 1
+  },
+  {
+    "id": "clocktower",
+    "name": "時計塔",
+    "description": "時を数え、星屑を夜空からすくい取る。",
+    "maxLevel": 10,
+    "baseCost": { "letters": 60, "memory": 2 },
+    "costGrowth": 1.6,
+    "production": { "stardust": 0.2 },
+    "productionIntervalMs": 5000,
+    "unlockCondition": { "type": "facilityLevel", "facilityId": "library", "level": 2 },
+    "visualOrder": 2
+  },
+  {
+    "id": "archive",
+    "name": "記録庫",
+    "description": "断片の記憶を整理し、物語の手がかりを残す。",
+    "maxLevel": 10,
+    "baseCost": { "letters": 80, "memory": 5 },
+    "costGrowth": 1.65,
+    "production": { "memory": 0.15 },
+    "productionIntervalMs": 8000,
+    "unlockCondition": { "type": "facilityLevel", "facilityId": "library", "level": 3 },
+    "visualOrder": 3
+  },
+  {
+    "id": "workshop",
+    "name": "工房",
+    "description": "道具を整え、施設の強化を少し楽にする。",
+    "maxLevel": 8,
+    "baseCost": { "letters": 120, "stardust": 3 },
+    "costGrowth": 1.7,
+    "production": { "letters": 0.5 },
+    "productionIntervalMs": 3000,
+    "unlockCondition": { "type": "facilityLevel", "facilityId": "clocktower", "level": 1 },
+    "visualOrder": 4
+  },
+  {
+    "id": "plaza",
+    "name": "広場",
+    "description": "人々が集まり、箱庭に温かさを運ぶ。",
+    "maxLevel": 8,
+    "baseCost": { "letters": 150, "memory": 8 },
+    "costGrowth": 1.7,
+    "production": { "letters": 0.8, "memory": 0.05 },
+    "productionIntervalMs": 4000,
+    "unlockCondition": { "type": "facilityLevel", "facilityId": "archive", "level": 2 },
+    "visualOrder": 5
+  }
+]

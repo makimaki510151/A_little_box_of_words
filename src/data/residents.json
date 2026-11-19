@@ -1,0 +1,50 @@
+[
+  {
+    "id": "lumen",
+    "name": "ルーメン",
+    "title": "最初の灯り守",
+    "description": "箱庭に最初に灯をともした静かな住人。言葉の温度を知っている。",
+    "unlockCondition": { "type": "facilityLevel", "facilityId": "library", "level": 1 },
+    "effectDescription": "文字片の自動生産 +10%",
+    "productionBonus": { "letters": 0.1 },
+    "dialogues": [
+      { "speaker": "ルーメン", "text": "……あ、聞こえますか。ここはまだとても小さな世界です。" },
+      { "speaker": "ルーメン", "text": "あなたが紡ぐ言葉が、箱の内側を少しずつ明るくしています。" },
+      { "speaker": "ルーメン", "text": "焦らなくても大丈夫。灯りは、消えない限り続きますから。" }
+    ]
+  },
+  {
+    "id": "mira",
+    "name": "ミラ",
+    "title": "記録の探し人",
+    "description": "古い手紙と図面を好む好奇心旺盛な住人。忘れられた物語を追う。",
+    "unlockCondition": { "type": "facilityLevel", "facilityId": "archive", "level": 1 },
+    "effectDescription": "記憶の自動獲得 +15%",
+    "productionBonus": { "memory": 0.15 },
+    "dialogues": [
+      { "speaker": "ミラ", "text": "記録庫、素敵すぎる！埃の匂いが冒険の匂いなんだよね。" },
+      { "speaker": "ミラ", "text": "この手紙……『箱の外側』って書いてある。外側ってどこ？" },
+      { "speaker": "ミラ", "text": "あなたのタイピング、まるでページをめくる音みたい。好き。" }
+    ]
+  },
+  {
+    "id": "hora",
+    "name": "ホラ",
+    "title": "時の観測者",
+    "description": "時計塔の上で星を数える無口な住人。放置の時間さえ愛おしむ。",
+    "unlockCondition": {
+      "type": "and",
+      "conditions": [
+        { "type": "facilityLevel", "facilityId": "clocktower", "level": 2 },
+        { "type": "facilityLevel", "facilityId": "plaza", "level": 1 }
+      ]
+    },
+    "effectDescription": "星屑の生産 +20%",
+    "productionBonus": { "stardust": 0.2 },
+    "dialogues": [
+      { "speaker": "ホラ", "text": "……時は流れている。あなたがいなくても、少しだけね。" },
+      { "speaker": "ホラ", "text": "星屑は急がない。待っているあいだに、世界は育つ。" },
+      { "speaker": "ホラ", "text": "鐘が鳴ったら、また顔を見せて。それだけで十分だ。" }
+    ]
+  }
+]

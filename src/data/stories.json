@@ -1,0 +1,78 @@
+[
+  {
+    "id": "ch0_s0",
+    "chapter": 0,
+    "section": 0,
+    "title": "序章：目覚め",
+    "summary": "閉じた小箱の中で、最初の言葉が芽吹く。",
+    "unlockCondition": { "type": "always" },
+    "dialogues": [
+      { "speaker": "？？？", "text": "……誰かいますか。" },
+      { "speaker": "？？？", "text": "この箱は長いあいだ、静かでした。" },
+      { "speaker": "ナレーション", "text": "目の前に、まだ形のない景色が広がっている。文字を打てば、世界が少しはっきりする。" },
+      { "speaker": "？？？", "text": "どうか、最初の灯りを。" }
+    ]
+  },
+  {
+    "id": "ch1_s1",
+    "chapter": 1,
+    "section": 1,
+    "title": "第一節：最初の灯り",
+    "summary": "図書館が建ち、ルーメンが姿を現す。",
+    "unlockCondition": { "type": "resident", "residentId": "lumen" },
+    "dialogues": [
+      { "speaker": "ルーメン", "text": "ありがとう。これで、影の形が見えるようになりました。" },
+      { "speaker": "ルーメン", "text": "図書館は記憶の入り口です。棚が増えるほど、物語も増えます。" },
+      { "speaker": "ナレーション", "text": "小さな灯が箱庭の中央で揺れた。世界は、ようやく夜を知る。" }
+    ]
+  },
+  {
+    "id": "ch1_s2",
+    "chapter": 1,
+    "section": 2,
+    "title": "第二節：忘れられた記録",
+    "summary": "記録庫から、箱の外を示唆する断片が見つかる。",
+    "unlockCondition": { "type": "resident", "residentId": "mira" },
+    "dialogues": [
+      { "speaker": "ミラ", "text": "みつけた！『世界は閉じているように見えて、実は……』って途中で切れてる。" },
+      { "speaker": "ルーメン", "text": "古い記録は、ときどき怖がります。読まれることを。" },
+      { "speaker": "ミラ", "text": "でも読まなきゃ進まないでしょ。ねえ、つぎのページを探そう。" }
+    ]
+  },
+  {
+    "id": "ch1_s3",
+    "chapter": 1,
+    "section": 3,
+    "title": "第三節：新しい訪問者",
+    "summary": "広場に人の気配が集まり、時計塔の鐘が応える。",
+    "unlockCondition": { "type": "resident", "residentId": "hora" },
+    "dialogues": [
+      { "speaker": "ホラ", "text": "……遅かったな。でも、ちょうどいい時刻だ。" },
+      { "speaker": "ミラ", "text": "ホラ！黙って登場しないでよ。びっくりする。" },
+      { "speaker": "ホラ", "text": "時は説明しない。訪れるだけだ。" },
+      { "speaker": "ルーメン", "text": "三人いれば、箱はもう孤独ではないですね。" }
+    ]
+  },
+  {
+    "id": "ch1_s4",
+    "chapter": 1,
+    "section": 4,
+    "title": "第四節：世界の外側",
+    "summary": "箱庭の縁で、外側の気配がかすかに触れる。",
+    "unlockCondition": {
+      "type": "and",
+      "conditions": [
+        { "type": "story", "storyId": "ch1_s3" },
+        { "type": "worldLevel", "level": 8 },
+        { "type": "resource", "resource": "memory", "amount": 20 }
+      ]
+    },
+    "dialogues": [
+      { "speaker": "ナレーション", "text": "箱の木目の向こうで、遠い風の音がした。" },
+      { "speaker": "ミラ", "text": "……聞こえた？ 外側だよ。絶対外側。" },
+      { "speaker": "ホラ", "text": "急ぐな。扉は、言葉が十分に積もったとき開く。" },
+      { "speaker": "ルーメン", "text": "第一章は、ここで一度閉じましょう。あなたの文字が、続きを書いてくれます。" },
+      { "speaker": "ナレーション", "text": "— 第一章・完 —" }
+    ]
+  }
+]
