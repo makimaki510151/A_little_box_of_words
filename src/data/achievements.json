@@ -1,0 +1,72 @@
+[
+  {
+    "id": "ach_first_type",
+    "name": "はじめての一文字",
+    "description": "初めてタイピングを行う",
+    "condition": { "type": "typingCount", "count": 1 },
+    "reward": { "letters": 10 }
+  },
+  {
+    "id": "ach_type_100",
+    "name": "百の言葉",
+    "description": "100回タイピングする",
+    "condition": { "type": "typingCount", "count": 100 },
+    "reward": { "letters": 50, "memory": 5 }
+  },
+  {
+    "id": "ach_combo_10",
+    "name": "手慣れた指",
+    "description": "コンボ10を達成する",
+    "condition": { "type": "combo", "count": 10 },
+    "reward": { "letters": 20 }
+  },
+  {
+    "id": "ach_combo_100",
+    "name": "流れる筆跡",
+    "description": "連続入力100回を達成する",
+    "condition": { "type": "combo", "count": 100 },
+    "reward": { "letters": 100, "stardust": 5 }
+  },
+  {
+    "id": "ach_first_build",
+    "name": "最初の建築",
+    "description": "初めて施設を建設する",
+    "condition": { "type": "facilityBuilt", "count": 1 },
+    "reward": { "letters": 15 }
+  },
+  {
+    "id": "ach_all_facilities",
+    "name": "箱庭の設計者",
+    "description": "すべての施設を建設する",
+    "condition": { "type": "facilityBuilt", "count": 5 },
+    "reward": { "letters": 80, "memory": 10, "stardust": 5 }
+  },
+  {
+    "id": "ach_all_residents",
+    "name": "三人の住人",
+    "description": "住人を全員解放する",
+    "condition": { "type": "residentsUnlocked", "count": 3 },
+    "reward": { "memory": 15, "stardust": 8 }
+  },
+  {
+    "id": "ach_ch1_clear",
+    "name": "第一章の終わり",
+    "description": "第一章をクリアする",
+    "condition": { "type": "storyCleared", "storyId": "ch1_s4" },
+    "reward": { "memory": 20, "stardust": 10 }
+  },
+  {
+    "id": "ach_letters_500",
+    "name": "文字の山",
+    "description": "累計で文字片を500獲得する",
+    "condition": { "type": "resourceEarned", "resource": "letters", "amount": 500 },
+    "reward": { "letters": 30 }
+  },
+  {
+    "id": "ach_library_max",
+    "name": "蔵書の守り手",
+    "description": "図書館を最大レベルまで強化する",
+    "condition": { "type": "facilityMaxed", "facilityId": "library" },
+    "reward": { "letters": 60, "memory": 8 }
+  }
+]

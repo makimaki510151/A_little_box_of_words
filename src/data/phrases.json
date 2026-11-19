@@ -1,0 +1,199 @@
+[
+  {
+    "id": "w01",
+    "text": "灯り",
+    "category": "word",
+    "difficulty": 1,
+    "baseReward": { "letters": 3 }
+  },
+  {
+    "id": "w02",
+    "text": "記憶",
+    "category": "word",
+    "difficulty": 1,
+    "baseReward": { "letters": 3 }
+  },
+  {
+    "id": "w03",
+    "text": "箱庭",
+    "category": "word",
+    "difficulty": 1,
+    "baseReward": { "letters": 4 }
+  },
+  {
+    "id": "w04",
+    "text": "星屑",
+    "category": "word",
+    "difficulty": 1,
+    "baseReward": { "letters": 4 }
+  },
+  {
+    "id": "w05",
+    "text": "図書館",
+    "category": "word",
+    "difficulty": 1,
+    "baseReward": { "letters": 5 }
+  },
+  {
+    "id": "w06",
+    "text": "時計塔",
+    "category": "word",
+    "difficulty": 1,
+    "baseReward": { "letters": 5 }
+  },
+  {
+    "id": "w07",
+    "text": "広場",
+    "category": "word",
+    "difficulty": 1,
+    "baseReward": { "letters": 3 }
+  },
+  {
+    "id": "w08",
+    "text": "記録",
+    "category": "word",
+    "difficulty": 1,
+    "baseReward": { "letters": 3 }
+  },
+  {
+    "id": "w09",
+    "text": "工房",
+    "category": "word",
+    "difficulty": 1,
+    "baseReward": { "letters": 4 }
+  },
+  {
+    "id": "w10",
+    "text": "物語",
+    "category": "word",
+    "difficulty": 1,
+    "baseReward": { "letters": 4 }
+  },
+  {
+    "id": "w11",
+    "text": "訪問者",
+    "category": "word",
+    "difficulty": 2,
+    "baseReward": { "letters": 6 }
+  },
+  {
+    "id": "w12",
+    "text": "小箱",
+    "category": "word",
+    "difficulty": 1,
+    "baseReward": { "letters": 3 }
+  },
+  {
+    "id": "s01",
+    "text": "小さな灯りがともる。",
+    "category": "sentence",
+    "difficulty": 2,
+    "baseReward": { "letters": 12 }
+  },
+  {
+    "id": "s02",
+    "text": "言葉が世界を形づくる。",
+    "category": "sentence",
+    "difficulty": 2,
+    "baseReward": { "letters": 14 }
+  },
+  {
+    "id": "s03",
+    "text": "忘れられた記録を読み解く。",
+    "category": "sentence",
+    "difficulty": 2,
+    "baseReward": { "letters": 16, "memory": 1 }
+  },
+  {
+    "id": "s04",
+    "text": "時計塔の鐘が静かに鳴る。",
+    "category": "sentence",
+    "difficulty": 2,
+    "baseReward": { "letters": 15 }
+  },
+  {
+    "id": "s05",
+    "text": "広場に新しい足音が響く。",
+    "category": "sentence",
+    "difficulty": 2,
+    "baseReward": { "letters": 14 }
+  },
+  {
+    "id": "s06",
+    "text": "工房から温かい光が漏れる。",
+    "category": "sentence",
+    "difficulty": 2,
+    "baseReward": { "letters": 16 }
+  },
+  {
+    "id": "s07",
+    "text": "星屑が夜空をゆっくり流れる。",
+    "category": "sentence",
+    "difficulty": 3,
+    "baseReward": { "letters": 18, "stardust": 1 },
+    "unlockCondition": { "type": "facilityLevel", "facilityId": "clocktower", "level": 1 }
+  },
+  {
+    "id": "s08",
+    "text": "箱の外側にはまだ見ぬ景色がある。",
+    "category": "sentence",
+    "difficulty": 3,
+    "baseReward": { "letters": 20, "memory": 1 },
+    "unlockCondition": { "type": "worldLevel", "level": 3 }
+  },
+  {
+    "id": "l01",
+    "text": "小箱の中で目覚めた世界は、まだ言葉の輪郭しか持っていなかった。",
+    "category": "long",
+    "difficulty": 3,
+    "baseReward": { "letters": 35, "memory": 2 }
+  },
+  {
+    "id": "l02",
+    "text": "一文字ずつ丁寧に紡ぐたび、図書館の棚に新しい本が並んでいく。",
+    "category": "long",
+    "difficulty": 3,
+    "baseReward": { "letters": 38, "memory": 2 },
+    "unlockCondition": { "type": "facilityLevel", "facilityId": "library", "level": 1 }
+  },
+  {
+    "id": "l03",
+    "text": "記録庫の奥で見つかった古い手紙は、世界の始まりについて語っていた。",
+    "category": "long",
+    "difficulty": 4,
+    "baseReward": { "letters": 42, "memory": 3 },
+    "unlockCondition": { "type": "facilityLevel", "facilityId": "archive", "level": 1 }
+  },
+  {
+    "id": "l04",
+    "text": "住人が増えるにつれ、箱庭はただの模型ではなく、生きた街になっていった。",
+    "category": "long",
+    "difficulty": 4,
+    "baseReward": { "letters": 45, "memory": 3 },
+    "unlockCondition": { "type": "resident", "residentId": "mira" }
+  },
+  {
+    "id": "sp01",
+    "text": "目覚め",
+    "category": "special",
+    "difficulty": 1,
+    "baseReward": { "letters": 8, "memory": 2 },
+    "unlockCondition": { "type": "always" }
+  },
+  {
+    "id": "sp02",
+    "text": "最初の灯り",
+    "category": "special",
+    "difficulty": 2,
+    "baseReward": { "letters": 15, "memory": 3 },
+    "unlockCondition": { "type": "story", "storyId": "ch0_s0" }
+  },
+  {
+    "id": "sp03",
+    "text": "忘れられた記録",
+    "category": "special",
+    "difficulty": 2,
+    "baseReward": { "letters": 18, "memory": 4 },
+    "unlockCondition": { "type": "story", "storyId": "ch1_s1" }
+  }
+]
