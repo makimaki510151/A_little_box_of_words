@@ -1,0 +1,2 @@
+# A_little_box_of_words
+WidgetIdleのストアページに影響を受けて作るタイピングゲーム。
