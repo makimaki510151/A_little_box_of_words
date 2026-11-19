@@ -11,11 +11,24 @@ Widget Idle のコンパクトな成長体験に影響を受けつつ、独自�
 3. 施設の自動生産で放置中も進行する
 4. 住人・物語・実績を解放していく
 
+## プレイ（公開URL）
+
+https://makimaki510151.github.io/A_little_box_of_words/
+
 ## 技術構成
 
 - React + TypeScript + Vite
 - セーブ：LocalStorage（エクスポート / インポート対応）
 - 公開：GitHub Pages（静的ビルド）
+
+## GitHub Pages 設定
+
+リポジトリの **Settings → Pages** で、次のいずれかにしてください。
+
+1. **推奨:** Source = **GitHub Actions**
+2. または Source = **Deploy from a branch** → Branch `gh-pages` / folder `/`
+
+`main` ブランチのルートをそのまま公開すると、Vite のソース `index.html` が配信されゲームが動きません。
 
 ## 開発
 

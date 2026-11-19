@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -25,8 +25,19 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+      - name: Verify build output
+        run: |
+          test -f dist/index.html
+          grep -q 'assets/' dist/index.html
+          test -f dist/.nojekyll
+          ls -la dist
       - uses: actions/upload-pages-artifact@v3
         with:
+          path: dist
+      - name: Upload dist for gh-pages branch
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist-site
           path: dist
 
   deploy:
@@ -38,3 +49,20 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  # Fallback for repos whose Pages source is still "Deploy from a branch"
+  publish-gh-pages:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: dist-site
+          path: dist
+      - name: Publish to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
+          force_orphan: true
